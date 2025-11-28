@@ -5,6 +5,9 @@ Litepicker
 
 Date range picker - lightweight, no dependencies
 
+## Upgrade
+This release delivers a full migration to TypeScript. No new functional features were introduced; the upgrade simply enables seamless consumption of ESM modules across modern web environments.
+
 ## Features
 * No dependencies
 * Single date or date range
