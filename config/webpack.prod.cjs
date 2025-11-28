@@ -1,4 +1,4 @@
-const multiconfig = require('./webpack.common.js');
+const multiconfig = require('./webpack.common.cjs');
 
 multiconfig.forEach(config => {
   config.mode = 'production';

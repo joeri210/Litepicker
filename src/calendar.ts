@@ -494,7 +494,9 @@ export class Calendar extends LPCore {
 
   private weekdayName(day, representation = 'short') {
     return new Date(1970, 0, day, 12, 0, 0, 0)
-      .toLocaleString(this.options.lang, { weekday: representation });
+      .toLocaleString(this.options.lang, { 
+          weekday: representation as "long" | "short" | "narrow" 
+      });
   }
 
   private calcSkipDays(date) {

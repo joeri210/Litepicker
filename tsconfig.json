@@ -1,18 +1,17 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/types",
-    "module": "commonjs",
-    "target": "es5",
-    "declaration": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*",
-    "src/methods.ts",
-    "tests"
-  ]
+	"compilerOptions": {
+		"outDir": "./dist/types",
+		"module": "esnext",
+		"target": "es5",
+		"declaration": true,
+		"plugins": [{"name": "typescript-plugin-css-modules"}],
+		"moduleResolution": "bundler"
+	},
+	"include": ["src/**/*"],
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*",
+		"src/methods.ts",
+		"tests"
+	]
 }
